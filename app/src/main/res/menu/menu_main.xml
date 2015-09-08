@@ -7,4 +7,5 @@
           android:title="@string/menu_log_out_label"
           android:orderInCategory="100"
           app:showAsAction="never" />
+
 </menu>
