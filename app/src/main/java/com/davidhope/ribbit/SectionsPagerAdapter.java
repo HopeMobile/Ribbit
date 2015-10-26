@@ -21,21 +21,43 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-          return MainActivityFragment.newInstance(position + 1);
+        switch (position) {
+            case 0:
+                return new InboxFragment();
+            case 1:
+                return new FriendsFragment();
+        }
+        return null;
     }
 
     @Override
     public int getCount() {
-        return tabTitles.length;
+        return 2;
     }
 
-
-    @Override
+  /*  @Override
     public CharSequence getPageTitle(int position) {
         super.getPageTitle(position);
+        switch (position) {
+            case 0:
+                return mContext.getString(R.string.inbox_tab_title);
+            case 1:
+                return mContext.getString(R.string.friends_tab_title);
+        }
 
-      return tabTitles[position];
+      return null;
 
+    }*/
+
+    public int getIcon(int position) {
+        switch (position) {
+            case 0:
+                return R.drawable.ic_tab_inbox;
+            case 1:
+                return R.drawable.ic_tab_friends;
+        }
+
+        return R.drawable.ic_tab_inbox;
     }
 
 }

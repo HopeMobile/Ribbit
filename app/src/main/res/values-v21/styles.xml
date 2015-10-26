@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!--<item name="android:statusBarColor">@color/statusBarColor</item>-->
+        <!--<item name="colorPrimaryDark">@color/material_deep_teal_200</item>-->
+    <!--</style>-->
+    <style name="Theme.Ribbit" parent="@style/Theme.AppCompat.Light">
+        <!--<item name="actionBarItemBackground">@drawable/selectable_background_ribbit</item>-->
+        <!--<item name="popupMenuStyle">@style/PopupMenu.Ribbit</item>-->
+        <!--<item name="dropDownListViewStyle">@style/DropDownListView.Ribbit</item>-->
+        <!--<item name="tab">@style/TabLayoutStyle.Ribbit</item>-->
+        <!--<item name="actionDropDownStyle">@style/DropDownNav.Ribbit</item>-->
+        <!--<item name="actionBarStyle">@style/ActionBar.Solid.Ribbit</item>-->
+        <!--<item name="actionModeBackground">@drawable/cab_background_top_ribbit</item>-->
+        <!--<item name="actionModeSplitBackground">@drawable/cab_background_bottom_ribbit</item>-->
+        <!--<item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Ribbit</item>-->
+        <item name="android:colorPrimaryDark">@android:color/darker_gray</item>
+        <item name="android:colorPrimary">@android:color/white</item>
+        <item name="android:colorAccent">@color/apptheme_color</item>
+        <item name="android:colorForeground">@android:color/white</item>
+        <item name="android:navigationBarColor">@color/tabBackgroundColor</item>
+
+    </style>
+</resources>

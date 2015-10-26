@@ -1,8 +1,181 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <!-- File created by the Android Action Bar Style Generator
+
+         Copyright (C) 2011 The Android Open Source Project
+         Copyright (C) 2012 readyState Software Ltd
+
+         Licensed under the Apache License, Version 2.0 (the "License");
+         you may not use this file except in compliance with the License.
+         You may obtain a copy of the License at
+
+              http://www.apache.org/licenses/LICENSE-2.0
+
+         Unless required by applicable law or agreed to in writing, software
+         distributed under the License is distributed on an "AS IS" BASIS,
+         WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+         See the License for the specific language governing permissions and
+         limitations under the License.
+    -->
+
+
+        <style name="Theme.Ribbit" parent="@style/Theme.AppCompat.Light">
+            <item name="actionBarStyle">@style/ActionBar.Solid.Ribbit</item>
+            <item name="android:actionBarItemBackground">@drawable/selectable_background_ribbit</item>
+            <item name="android:actionModeBackground">@drawable/cab_background_top_ribbit</item>
+            <item name="android:actionDropDownStyle">@style/DropDownNav.Ribbit</item>
+            <item name="android:dropDownListViewStyle">@style/DropDownListView.Ribbit</item>
+            <item name="android:popupMenuStyle">@style/PopupMenu.Ribbit</item>
+            <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Ribbit</item>
+            <item name="actionModeSplitBackground">@drawable/cab_background_bottom_ribbit</item>
+            <!--<item name="android:colorPrimary">@android:color/white</item>-->
+            <!--<item name="android:colorPrimaryDark">@color/apptheme_color</item>-->
+            <!--<item name="android:colorAccent">@color/pressed_purple_button</item>-->
+            <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+            <!--<item name="android:tabWidgetStyle">@style/TabLayoutStyle.Ribbit</item>-->
+            <item name="android:actionOverflowButtonStyle">@style/Theme.Ribbit.Overflow</item>
+        </style>
+
+        <style name="Theme.Ribbit.NoActionBar">
+            <item name="windowActionBar">false</item>
+            <item name="windowNoTitle">true</item>
+        </style>
+        <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />
+        <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+        <style name="Theme.Ribbit.Overflow" parent="@android:style/Widget.ActionButton.Overflow">
+           <item name="android:src">@drawable/ic_menu_overflow</item>
+        </style>
+
+        <style name="ActionBar.Solid.Ribbit" parent="@style/Widget.AppCompat.Light.ActionBar">
+            <!--<item name="background">@drawable/ab_solid_ribbit</item>-->
+            <!--<item name="backgroundStacked">@drawable/ab_stacked_solid_ribbit</item>-->
+            <!--<item name="backgroundSplit">@drawable/ab_bottom_solid_ribbit</item>-->
+            <item name="android:titleTextStyle">@style/ActionBar.Solid.Ribbit.TitleTextStyle</item>
+        </style>
+
+       <style name="ActionBar.Solid.Ribbit.TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+           <item name="android:textColor">@color/text_color</item>
+       </style>
+
+        <!--<style name="ActionBar.Transparent.Ribbit" parent="@style/Widget.AppCompat.Light.ActionBar">-->
+            <!--<item name="background">@drawable/ab_transparent_ribbit</item>-->
+            <!--<item name="progressBarStyle">@style/ProgressBar.Ribbit</item>-->
+        <!--</style>-->
+
+        <!--<style name="ActionBar.Transparent.Ribbit." parent="Widget.Design.AppBarLayout">-->
+            <!--<item name="background">@drawable/ab_transparent_ribbit</item>-->
+
+        <!--</style>-->
+
+        <style name="TabLayoutStyle.Ribbit" parent="Widget.Design.TabLayout">
+            <item name="tabIndicatorColor">@color/tabBackgroundColor</item>
+            <item name="tabBackground">@color/tabBackgroundColor</item>
+            <item name="android:layout_margin">0dp</item>
+            <!--<item name="background">@drawable/ab_solid_ribbit</item>-->
+            <!--<item name="android:background">@color/apptheme_color</item>-->
+            <!--<item name="backgroundStacked">@drawable/ab_stacked_solid_ribbit</item>-->
+            <!--<item name="backgroundSplit">@drawable/ab_bottom_solid_ribbit</item>-->
+        </style>
+
+    <style name="ActionBarStyle" parent="Theme.AppCompat.Light">
+        <item name="android:background">#ffffff</item>
+        <item name="android:actionDropDownStyle">@color/light_gray</item>
     </style>
+
+    <style name="ActionButton.CloseMode.Ribbit" parent="Widget.AppCompat.Light.ActionButton.CloseMode">
+          <item name="android:background">@drawable/btn_cab_done_default_ribbit</item>
+    </style>
+
+    <style name="PopupMenu.Ribbit" parent="Widget.AppCompat.Light.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_ribbit</item>
+    </style>
+
+    <style name="DropDownListView.Ribbit" parent="Widget.AppCompat.Light.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_ribbit</item>
+    </style>
+
+    <style name="DropDownNav.Ribbit" parent="Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/spinner_ab_default_ribbit</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_ribbit</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_ribbit</item>
+    </style>
+
+
+    <style name="EditTextHolo" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/apptheme_edit_text_holo_light</item>
+    </style>
+
+    <style name="AuthBackground">
+        <item name="android:background">@drawable/background_fill</item>
+    </style>
+
+    <style name="AuthBackgroundImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:scaleType">fitStart</item>
+        <item name="android:src">@drawable/background</item>
+    </style>
+
+    <style name="AuthTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:text">@string/app_name</item>
+        <item name="android:textSize">60sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AuthTitle.AuthSubTitle">
+        <item name="android:layout_alignParentTop">false</item>
+        <item name="android:layout_below">@+id/title</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:text">@string/subtitle</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="AuthFieldContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@+id/subtitle</item>
+        <item name="android:layout_marginTop">@dimen/login_vertical_margin</item>
+        <item name="android:layout_marginStart">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginEnd">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingStart">@dimen/login_horizontal_padding</item>
+        <item name="android:paddingEnd">@dimen/login_horizontal_padding</item>
+        <item name="android:paddingTop">@dimen/login_vertical_padding</item>
+        <item name="android:paddingBottom">@dimen/login_vertical_padding</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="AuthEditText" parent="EditTextHolo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColorHint">@color/light_gray</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="AuthButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/editTextLayout</item>
+        <item name="android:layout_marginStart">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginEnd">@dimen/activity_horizontal_margin</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:background">@drawable/button_custom</item>
+    </style>
+
+    <style name="Theme.Ribbit.Light.NoActionBar" parent="@style/Theme.AppCompat.Light.NoActionBar" >
+        <item name="android:colorBackground">@android:color/white</item>
+    </style>
+
 
 </resources>
